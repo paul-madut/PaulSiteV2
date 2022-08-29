@@ -5,7 +5,7 @@
     scroll-behavior: smooth;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+/* Navbar Section */
 .navbar{
     height: 10%;
     display: flex;
@@ -74,7 +74,7 @@
     -moz-text-fill-color: transparent;
     transition: all 0.3s ease;
   }
-
+/* Hero Section */
   .hero{
     text-align: center;
     align-items: center;
@@ -124,5 +124,40 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  }
+
+  /* About Section */
+
+  #carleton__pic{
+    display: flex;
+    justify-content: center;
+  }
+
+.about{
+  padding: 25px 0 ;
+  }
+.about__header{
+  color: white;
+}
+.about__cards{
+  max-width: 550px;
+  padding: 1rem;
+  position: relative;
+  background: linear-gradient(to right, #333399, #ff00cc);;
+  padding: 3px;
+  align-items:  center;
+}
+  #about__card1{
+    border: 2px solid linear-gradient(to right, #333399, #ff00cc);
+
+    display: flex;
+    align-items: center;
+
+  }
+
+  #aboutp1{
+    color: white;
+    margin: 10px;
+    text-align: center;
 
   }
