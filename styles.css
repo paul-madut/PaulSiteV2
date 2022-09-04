@@ -17,9 +17,10 @@
     height: 60px;
     z-index: 1;
     width: 100%;
-    background: #780206;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #061161, #780206); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+         
     margin:  0px auto;
     padding:  0px 50px;
   }
@@ -135,29 +136,27 @@
 
 .about{
   padding: 25px 0 ;
+  
   }
 .about__header{
   color: white;
 }
 .about__cards{
+  display: flex;
   max-width: 550px;
   padding: 1rem;
   position: relative;
   background: linear-gradient(to right, #333399, #ff00cc);;
   padding: 3px;
   align-items:  center;
+  
 }
-  #about__card1{
-    border: 2px solid linear-gradient(to right, #333399, #ff00cc);
 
-    display: flex;
-    align-items: center;
-
-  }
 
   #aboutp1{
     color: white;
     margin: 10px;
     text-align: center;
+    
 
   }
