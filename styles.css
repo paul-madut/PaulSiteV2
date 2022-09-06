@@ -135,28 +135,68 @@
   }
 
 .about{
-  padding: 25px 0 ;
+  padding: 20px 50px ;
   
   }
 .about__header{
   color: white;
 }
-.about__cards{
-  display: flex;
-  max-width: 550px;
-  padding: 1rem;
-  position: relative;
-  background: linear-gradient(to right, #333399, #ff00cc);;
-  padding: 3px;
-  align-items:  center;
+
+.about__cards {
+  padding: 10px;
+  display:flex;  
+  justify-content:space-between;
   
+
+}
+
+.aboutp{
+  color: white;
 }
 
 
-  #aboutp1{
-    color: white;
-    margin: 10px;
-    text-align: center;
-    
+#about__card1 {
 
-  }
+  color: white;
+  justify-content: center;
+  text-align: center;
+  flex-basis: 15%;
+  
+
+  padding: 1rem;
+  position: relative;
+  background: linear-gradient(to right, red, purple);
+  padding: 3px;
+}
+#about__card2{
+
+  color: white;
+  justify-content: center;
+  text-align: center;
+  flex-basis: 15%;
+
+
+  padding: 1rem;
+  position: relative;
+  background: linear-gradient(to right, red, purple);
+  padding: 3px;
+  max-height: 322px;
+
+
+
+}
+#about__card3{
+
+  color: white;
+  justify-content: center;
+  text-align: center;
+  flex-basis: 15%;
+
+
+  padding: 1rem;
+  max-width: 300px;
+  max-height: 322px;
+  position: relative;
+  background: linear-gradient(to right, red, purple);
+  padding: 3px;
+}
