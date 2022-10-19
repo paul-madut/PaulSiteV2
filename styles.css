@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-
+    background: #1B262C;
     scroll-behavior: smooth;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -18,7 +18,8 @@
     z-index: 1;
     width: 100%;
     background: #000000;  /* fallback for old browsers */
-
+    background: rgb(15,76,117);
+    background: linear-gradient(0deg, rgba(15,76,117,1) 18%, rgba(50,130,184,1) 78%);
          
     margin:  0px auto;
     padding:  0px 50px;
@@ -86,22 +87,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
-   
+    max-width: 1200px;
+    margin: 0 auto;
     height: 90%;
     text-align: center;
     padding: 30px;
-
-    
-  }
-
-  .bg__image{
-
-    background-image: url(/background.jpg);
-    z-index: 20;
-    height: 100vh;
-    width: 95%;
-
   }
 
   .hero__heading{
@@ -113,15 +103,14 @@
     background: #FF5F6D;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #1CB5E0, #000851);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    
+    
+    
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -mo-text-fill-color: transparent;
-
-    float: right;
-  
   }
 .hero__description{
   color: white;
