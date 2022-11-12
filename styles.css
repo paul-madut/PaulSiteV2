@@ -105,7 +105,9 @@
 
 
     background-size: cover;
+    background-position: center;
     height: 100vh;
+    width: 100%;
     background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.2)),url(/background.jpg);
 
   }
@@ -162,11 +164,38 @@
   /* About Section */
 
 .about{
+  padding: 80px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #111;
   position: relative;
+  color: ababab;
+}
+
+.row{
+  display: flex;
+  justify-content:  space-between;
+  flex-wrap: wrap;
+}
+
+.about1__col{
+  flex-basis: 35%;
+
+}
+
+.about1__col img{
+  width: 100%;
+
+}
+
+.about2__col{
+  flex-basis: 60%;
+}
+
+.subtitle{
+  color: white; 
+  font-size: 60px;
 }
 
 .profile__pic{
@@ -180,32 +209,3 @@
 
 }
 
-.about__header h4{
-  text-align: center;
-  color: white;
-  margin-left:50% ;
-}
-
-.about__header h1{
-  text-align: center;
-  background: #FF5F6D;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #1CB5E0, #000851);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-
-}
-
-
-
-.intro__paragraph{
-  color: grey;
-  position: absolute;
-
-  max-width: 25%;
-  
-}
