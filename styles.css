@@ -139,7 +139,7 @@
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -mo-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 
     padding: 10px;
   
@@ -159,87 +159,53 @@
   padding: 15px;
 }
 
-#paul__selfie{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  }
-
   /* About Section */
-
-  #carleton__pic{
-    display: flex;
-    justify-content: center;
-  }
 
 .about{
   display: flex;
   justify-content: center;
-  background: #000000;
+  align-items: center;
+  background: #111;
+  position: relative;
 }
 
-.about__container{
-  display: flex;
-  justify-content: center;
+.profile__pic{
+
+
 
 }
+
 .about__header{
+
+
+}
+
+.about__header h4{
+  text-align: center;
+  color: white;
+  margin-left:50% ;
+}
+
+.about__header h1{
+  text-align: center;
   background: #FF5F6D;  /* fallback for old browsers */
-  background:(to right, #1CB5E0, #000851);  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #1CB5E0, #000851);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+  background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -mo-text-fill-color: transparent;
-  
-  align-items: center;
+  -moz-text-fill-color: transparent;
+
+}
+
+
+
+.intro__paragraph{
+  color: grey;
   position: absolute;
-}
 
-
-
-.about__cards{
-  padding: 50px;
-  border: 100px;
-  align-items: center;
-
-  text-align: center;
-  display: flex;
-  justify-content: center;
-}
-
-.aboutp {
-color: white;
-text-align: center;
-width: fit-content;
-
-}
-
-#about__card1 {
-  border-right: 50px;
-  border: 2px solid #ccc;
-  width:fit-content;
-  margin: 5%;
-}
-
-#about__card2 {
-  border-right: 50px;
-  border: 2px solid #ccc;
-  width: fit-content;
-  margin: 5%;
-}
-
-#about__card3 {
-  border-right: 50px;
-  border: 2px solid #ccc;
-  width: fit-content;
-  margin: 5%;
-}
-#about__card3 ul{
-  color: white;
-}
-#about__card2 ol{
-  color: white;
+  max-width: 25%;
+  
 }

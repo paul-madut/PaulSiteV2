@@ -9,105 +9,164 @@
 </head>
 <body>
     <script href ="app.js"></script>
+
     <header>
         <nav class="navbar">
+
         <div class="navbar__container">
+
             <a href="index.html" id="navbar__logo">PaulSite</a>
+
             <ul class="navbar__menu"></ul>
+
                 <li class = "navbar__item">
                     <a href="index.html" class="navbar__links" id="homepage"> Home <a/>
                 </li>
+
                 <li class = "navbar__item">
                     <a href="about.html" class="navbar__links" id="aboutpage"> About<a/>
                 </li>
+
                 <li class = "navbar__item">
                     <a href="skills.html" class="navbar__links" id="skillpage"> Skills <a/>
                 </li>
+
                 <li class = "navbar__item">
                     <a href="contact.html" class="navbar__links" id="contactpage"> Contact Me <a/>
                 </li>
         </div>
+
     </nav>
+
     </header>
+
     <div class="hero">
+
         <div class="hero__container">
+
             <h1 class="hero__heading">
                 Hello! I'm <br> <span id="hero__highlight"> Paul Madut </span>            
            </h1>
+
            <div class="hero__description">
-            2nd Year Computer science Student| Aspiring Software Engineer/Full Stack Dev 
+            Computer Science Student| Aspiring Software Engineer/Full Stack Dev 
            </div>
+
            <div class="socials">
             <ul>
+
             <li id="Instagram"> <a href="https://www.instagram.com/paultheprogrammer/" target="_blank">
                 <img src="/socials/iconmonstr-instagram-15-240 (1).png" height="50px">
             </a> 
                  </li>
+
             <li id="Linkedin">
                 <a href="https://www.linkedin.com/in/paul-madut-94b360220/?trk=public_profile_browsemap&originalSubdomain=ca" target="_blank">
                     <img src="/socials/iconmonstr-linkedin-5-240 (1).png" height="50px" >
                 </a>
             </li>
+
             <li id="Mail"> 
             <a href="mailto:paulmadut@paultheprogrammer.ca" target="_blank">
                 <img src="/socials/iconmonstr-email-11-240 (1).png" height="50px">
             </a></li>
+
             <li id="Github"> 
             <a href="https://github.com/paul-madut" target="_blank">
                 <img src="/socials/iconmonstr-github-5-240 (1).png" height="50px">
             </a></li>
+
         </ul>
            </div>
         </div>
 
     </div>
 
-    <div class="about">
-        <div class="about__container">
-        <div class="about__header">
-            <h2>About</h2> 
-        </div>
-        <div class="about__cards">
-            <div id="about__card1">
-                <img id="carleton__pic" src="/aboutpics/carleton.png" width ="250px">
+    <div class = "about">  
 
-                <p class="aboutp">I'm a second year student at Carleton University.
-                     My major is computer science with
-                      a stream in software engineering.</p>
+        <div class="row section-intro">
+           <div class="col-twelve">
 
+            <div class="about__header">
+              <h4>About</h4>
+              <h1>Nice to meet you.</h1>
+              <img class ="profile__pic" src="aboutpics/profile-pic.png" width="200px" alt="Profile Picture">
             </div>
-            <div id="about__card2">
-                <img id="plang__pic" src="/aboutpics/plang.jpg" height ="200px">
-
-                <p class="aboutp">
-                    The programming languages I am proficient in are:
-
-                    <ol>
-                        <li>Python</li>
-                        <li>Java</li>
-                        <li>C++</li>
-                        <li>Python</li>
-                    </ol> 
-                
-                </p>                
+  
+              <div class="intro">
+  
+                 
+  
+                 <p class="intro__paragraph">I'm a highly motivated software developper looking to challenge and increase my current abilities.  I'm a second year computer science student at Carleton University. My passion is writing, viewing and debugging new software and learning new technologies. </p>
+              </div>            
+  
+           </div>         
+        </div> <!-- /section-intro -->
+  
+        <div class="row about-content">
+  
+           <div class="col-six tab-full">
+  
+              <h3>Profile</h3>
+              <p>Currently seeking employment as a software engineering intern. I would love to have a consersation with you. You can reach me at <a href="mailto:paulmadut@paultheprogrammer.ca">paulmadut@paultheprogrammer.ca</a>.</p>
+  
+              <ul class="info-list">
+                 <li>
+                    <strong>Name:</strong>
+                    <span>Paul Madut</span>
+                 </li>
+                 <li>
+                    <strong>Birth Date:</strong>
+                    <span>January 21, 2003</span>
+                 </li>
+                 <li>
+                    <strong>Email:</strong>
+                    <span>paulmadut@paultheprogrammer.ca</span>
+                 </li>
+  
+              </ul> <!-- /info-list -->
+  
+           </div>
+  
+           <div class="col-six tab-full">
+  
+              <h3>Skills</h3>
+              <p>I am a team-oriented leader who seeks to take initiative in new and challenging situations. My expertise is problem solving and troubleshooting software. </p>
+  
+              <ul class="skill-bars">
+                 <li>
+                    <div class="progress percent90"><span>100%</span></div>
+                    <strong>Python</strong>
+                 </li>
+                 <li>
+                    <div class="progress percent90"><span>90%</span></div>
+                    <strong>Java</strong>
+                 </li>
+                 <li>
+                    <div class="progress percent70"><span>70%</span></div>
+                    <strong>JS/CSS/HTML</strong>
+                 </li>
+                 <li>
+                    <div class="progress percent60"><span>60%</span></div>
+                    <strong>C++</strong>
+                 </li>
+                 <li>
+                    <div class="progress percent60"><span>60%</span></div>
+                    <strong>Django/SQL</strong>
+                 </li>
+                </ul> <!-- /skill-bars -->    
             </div>
-            <div id="about__card3">
-                <img id="plang__pic" src="/aboutpics/ptech.jpg" height ="200px">
-                <p class="aboutp">
-                    The programming technologies I am proficient in are:
-
-                    <ul>
-                        <li>Git</li>
-                        <li>Django</li>
-                        <li>SQL</li>
-                        <li>Flask</li>
-                    </ul> 
-                
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
+   
+         </div>
+   
+         <div class="row button-section">
+            <div class="col-twelve">
+               <a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
+               <a href="files/resume.pdf" title="Download CV" class="button button-primary">Download CV</a>
+            </div>         
+         </div>
+        </div> <!-- /process-->    
+   
 
 
 
