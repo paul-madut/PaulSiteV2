@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel ="stylesheet" href="styles.css">
     <title>Welcome to Everything Paul!</title>
+    <script src="app.js"></script>
 </head>
 <body>
     <script href ="app.js"></script>
@@ -95,16 +96,32 @@
                 My passion is writing, viewing and debugging new software and learning new technologies.</p>
 
                 <div class="tab__titles">
-                    <p class="tab__links active__link">Skills</p>
-                    <p class="tab__links">Projects</p>
-                    <p class="tab__links">Education</p>
+                    <p class="tab__links active__link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab__links"onclick="opentab('projects')">Projects</p>
+                    <p class="tab__links"onclick="opentab('education')">Education</p>
                 </div>
 
-                <div class="tab__contents">
+                <div class="tab__contents active__tab" id="skills">
                     <ul>
                         <li><span>Web Development</span><br>Web App Development</li>
                         <li><span>UI/UX</span><br>Web Site/Application Design</li>
                         <li><span>Software Engineering</span><br>Creating Computer Programs</li>
+                    </ul>
+                </div>
+
+                <div class="tab__contents" id="projects">
+                    <ul>
+                        <li><span>Frequent Websites</span><br>Project 1 </li>
+                        <li><span>Break Generator</span><br>Project 2</li>
+                        <li><span>Portfolio Website</span><br>Project 3 </li>
+                    </ul>
+                </div>
+
+                <div class="tab__contents" id="education">
+                    <ul>
+                        <li><span>Highschool</span><br>Honor Roll| French immersion| </li>
+                        <li><span>Post-Secondary</span><br>Carleton University| Computer Science Major| Seocnd Year</li>
+                        <li><span>Self Taught</span><br>Harvard CS50 Web Develpoment|Adavnced Python Course| Algorithms + Data Structures </li>
                     </ul>
                 </div>
             </div>
@@ -112,8 +129,19 @@
       </div>
 
         
-        </div> <!-- /process-->    
-   
+        </div>
+        <!----------- Services ---------------->  
+
+   <div class="services">
+        <div class="conatiner">
+            <h1 class ="subtitle"> My Services </h1> 
+            <div class="services__list">
+                <ul></ul>
+            </div>
+        </div>
+
+
+   </div>
 
 
 
