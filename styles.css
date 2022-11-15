@@ -31,6 +31,10 @@ h2{
   color: white;
 }
 
+p{
+  color: white;
+}
+
 /* Navbar Section */
 .navbar{
     height: 10%;
@@ -402,4 +406,68 @@ i{
 .btn:hover{
   background: purple;
 
+}
+
+/*    Contact     */
+
+#contact{
+  background: #000851;
+}
+
+.contact__left{
+  flex-basis: 35%;
+}
+
+.contact__right{
+  flex-basis: 60%;
+}
+
+.contact__left p {
+  margin-top: 10px;
+}
+
+.contact__left p i {
+  color: #3a47d5;
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.btn.btn2{
+  display: inline-block;
+  background: purple;
+
+}
+
+.contact__right form{
+  width: 100%;
+
+}
+
+form input, form textarea{
+  width: 90%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  border-radius: 15px;
+  font-size: 12px;
+
+}
+
+form btn2{
+   padding:  14px;
+   font-size: 18px;
+   margin-top: 20px;
+   cursor: pointer;
+}
+
+.copyright{
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background-color: #262626;
+  font-weight: 200;
+  margin-top: 20px;
 }
