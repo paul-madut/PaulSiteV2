@@ -175,7 +175,7 @@ p{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #111;
+  background: black;
   position: relative;
   color: ababab;
 }
@@ -268,7 +268,7 @@ color: grey;
 
 .services{
   padding: 40px 0;
-  background: #000000;
+  background: #111;
 }
 
 .services__list{
@@ -470,4 +470,12 @@ form btn2{
   background-color: #262626;
   font-weight: 200;
   margin-top: 20px;
+}
+
+/*       Mobile Phone Responsivness*/
+
+@media only screen and (max-width: 600px){
+  .navbar__container li{
+    display: hidden;
+  }
 }
