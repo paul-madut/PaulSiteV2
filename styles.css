@@ -127,7 +127,7 @@ p{
     opacity: 0.5;
 
     position: absolute;
-    z-index: 0;
+
 
 
   }
@@ -146,6 +146,7 @@ p{
     width: auto;
     text-align: center;
     padding: 30px;
+    position: relative;
 
     
 
