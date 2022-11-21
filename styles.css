@@ -1,9 +1,8 @@
 *{
     margin: 0;
-    padding: 0;
-
-    scroll-behavior: smooth;
+    padding: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -194,7 +193,7 @@ p{
 
   /* About Section */
 
-.about{
+#about{
   padding: 80px 0;
   display: flex;
   justify-content: center;
@@ -290,7 +289,7 @@ color: grey;
 
 /*  Services  */
 
-.services{
+#services{
   padding: 40px 0;
   background: #111;
 }
@@ -332,14 +331,23 @@ i{
   display: inline-block;
 }
 
+.services__list p{
+  color: #fff;
+}
 .services__list div:hover{
   background: blue;
   transform: translateY(-10px);
+
+  background: -webkit-linear-gradient(to right, #1CB5E0, #000851);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      
+
 }
   
 /*  Portfolio  */
 
-.portfolio{
+#portfolio{
   padding: 50px;
   background: #000000;
 }
@@ -387,6 +395,7 @@ i{
   color: #fff;
   font-weight: 500;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .layer a {
@@ -400,6 +409,7 @@ i{
   height: 60px;
   border-radius: 50%;
   text-align: center;
+  justify-content: center;
 
 }
 
@@ -425,6 +435,7 @@ i{
   text-decoration: none;
   color: #fff;
   transition: background 0.5s;
+  cursor: pointer;
 }
 
 .btn:hover{
@@ -436,6 +447,13 @@ i{
 
 #contact{
   background: #000851;
+  background-size: cover;
+    background-position: center;
+    height: auto;
+    width: 100%;
+    background-image: url("background2.jpg");
+    background-repeat: no-repeat;
+    position: absolute;
 }
 
 .contact__left{
@@ -494,6 +512,12 @@ form btn2{
   background-color: #262626;
   font-weight: 200;
   margin-top: 20px;
+}
+
+#msg{
+  color: green;
+  margin-top: -10px;
+  display: block;
 }
 
 /*       Mobile Phone Responsivness*/

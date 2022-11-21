@@ -8,6 +8,7 @@
     <title>Welcome to Everything Paul!</title>
     <script src="app.js"></script>
     <script src="https://kit.fontawesome.com/ea9f481f7d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     
     
 </head>
@@ -24,19 +25,23 @@
             <ul class="navbar__menu"></ul>
 
                 <li class = "navbar__item">
-                    <a href="#" class="navbar__links" id="homepage"> Home <a/>
+                    <a href="#header" class="navbar__links" id="homepage"> Home <a/>
                 </li>
 
                 <li class = "navbar__item">
-                    <a href="#" class="navbar__links" id="aboutpage"> About<a/>
+                    <a href="#about" class="navbar__links" id="aboutpage"> About<a/>
                 </li>
 
                 <li class = "navbar__item">
-                    <a href="#" class="navbar__links" id="servicepage"> Services <a/>
+                    <a href="#services" class="navbar__links" id="servicepage"> Services <a/>
                 </li>
 
                 <li class = "navbar__item">
-                    <a href="#" class="navbar__links" id="contactpage"> Contact Me <a/>
+                    <a href="#portfolio" class="navbar__links" id="portfoliopage"> Portfolio <a/>
+                </li>
+
+                <li class = "navbar__item">
+                    <a href="#contact" class="navbar__links" id="contactpage"> Contact Me <a/>
                 </li>
         </div>
 
@@ -53,7 +58,7 @@
             
 
             <h1 class="hero__heading">
-                Hello! I'm <br> <span class="hero__highlight"> Paul Madut </span>            
+                Hello! I'm <br> <span class="hero__highlight"> Paul </span>            
            </h1>
 
            <div class="hero__description">
@@ -92,7 +97,7 @@
 
     </div>
 <!------------------About Section-------------->
-    <div class = "about">  
+    <div id = "about">  
       <div class="about__container">
          <div class="row">
             <div class="about1__col">
@@ -139,7 +144,7 @@
         </div>
         <!----------- Services ---------------->  
 
-   <div class="services">
+   <div id="services">
         <div class="conatiner">
             <h1 class ="subtitle"> My Services </h1> 
             <div class="services__list">
@@ -155,7 +160,8 @@
                 <div>
                     <i class="fa-solid fa-mobile-screen-button"></i>
                     <h2>UI/UX</h2>
-                    <p class="paragraph__text"> One of the most important things about a web application is how the user interacts with
+                    <p class="paragraph__text"> One of the most important things about a web application is how the user interacts and experiences it.
+                         My job is to ensure that the user of your web/mobile app has the most pleasant, clear and effiecient experience when encountering your brand.
                     </p>
                     <a href="#">Learn More</a>
                 </div>
@@ -163,8 +169,8 @@
                 <div>
                     <i class="fa-brands fa-python"></i>
                     <h2>Software/Script Development</h2>
-                    <p class="paragraph__text">I will design and manage your site for a very competitve rate while still maintaing a very high level of quality.
-                        I will deliver unmatched efficinecy as well as keep your ability to communicate with me a number one priority.
+                    <p class="paragraph__text">Need help automating emails? Organizing files? Update excel sheets?
+                        All of these monotonous tasks can be automated and I can be the person to help you do it!
                     </p>
                     <a href="#">Learn More</a>
                 </div>
@@ -176,7 +182,7 @@
 
           <!----------- Portfolio ---------------->  
 
-          <div class="portfolio">
+          <div id="portfolio">
             <div class="conatiner">
                 <h1 class ="subtitle"> My Work </h1>
                 <div class="work__list">
@@ -193,29 +199,25 @@
                 </div>
 
                 <div class="work"> 
-                    <img src="/portfoliopics/PaulSite.PNG" alt="Work Exp 1">
+                    <img src="/portfoliopics/comingsoon.jpg" alt="Work Exp 2">
                     <div class="layer">
-                        <h3>Portfolio Website</h3>
-                        <p>Made a website showcasing my abilities and past Projects.
-                         This website makes it easier for employers and future clients to see
-                          what I am capable fo and to contact me effortlessley.</p>
+                        <h3>Coming Soon</h3>
+                        <p>Woah this is a big project. I need a little more time to work on it but, rest assured it is on the way!</p>
                           <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
 
                 <div class="work"> 
-                    <img src="portfoliopics/PaulSite.PNG" alt="Work Exp 1">
+                    <img src="/portfoliopics/comingsoon.jpg" alt="Work Exp 2">
                     <div class="layer">
-                        <h3>Portfolio Website</h3>
-                        <p>Made a website showcasing my abilities and past Projects.
-                         This website makes it easier for employers and future clients to see
-                          what I am capable fo and to contact me effortlessley.</p>
+                        <h3>Coming Soon</h3>
+                        <p>Woah this is a big project. I need a little more time to work on it but, rest assured it is on the way!</p>
                           <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
 
             </div>
-            <a class="btn">See More</a>
+            <!-- <a class="btn">See More</a> --->
 
             </div>
           </div> 
@@ -258,12 +260,13 @@
                    <a class="btn btn2" downlaod href="Resume (2).pdf">Download CV</a>
             </div>
             <div class="contact__right">
-                <form>
+                <form name="submit-to-google-sheet">
                     <input type="text" name = "Name" placeholder="Your Name"required>
                     <input type="email" name="email" placeholder="Your Email"required>
                     <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
                     <button class="btn btn2" type="submit">Submit</button>
                 </form>
+                <span id="msg"></span>
             </div>
         </div>
     </div>
@@ -272,15 +275,39 @@
     </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 <script>
     var typed = new Typed(".hero__highlight",{
-    strings:["Paul","","Paul Madut","","Paul The Programmer."],
+    strings:["Paul","Paul Madut","Paul The Programmer."],
     typeSpeed: 150,
-    backSpeed: 150,
+    backSpeed: 190,
     loop: false
 })
   </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzki9QKvKXqSV3vpyK0ZDHyw-baSNMBMPYjtt7SjIxYV-SxlihhmbpgJreOyc0BXmRq2w/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML = ("Message was sent successfully!")
+            setTimeout(function(){
+                msg.innerHTML=""
+            }, 5000);
+        })
+        .catch(error => {
+            msg.innerHTML = ("Message was not sent successfully!")
+            setTimeout(function(){
+                msg.innerHTML=""
+            }, 5000);
+        })
+    })
+  </script>
+
 </body>
 
 
