@@ -191,19 +191,22 @@
                     <img src="portfoliopics/PaulSite.PNG" alt="Work Exp 1">
                     <div class="layer">
                         <h3>Portfolio Website</h3>
-                        <p>Made a website showcasing my abilities and past Projects.
+                        <p>I made a website showcasing my abilities and projects.
                          This website makes it easier for employers and future clients to see
-                          what I am capable fo and to contact me effortlessley.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                          what I am capable of as well as contact me effortlessley.</p>
+                        <a href="https://github.com/paul-madut/PaulSiteV2"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
 
                 <div class="work"> 
-                    <img src="/portfoliopics/comingsoon.jpg" alt="Work Exp 2">
+                    <img src="/portfoliopics/break.jpg" alt="Work Exp 2">
                     <div class="layer">
-                        <h3>Coming Soon</h3>
-                        <p>Woah this is a big project. I need a little more time to work on it but, rest assured it is on the way!</p>
-                          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>Work Break Generator</h3>
+                        <p>As a supervisor at [REDACTED] it is my responsablity to document when my peers are supposed
+                            to go and return from their breaks. Scheduling these breaks by hand took a monotonous, painstaking 13 minutes
+                            each time so I automated the task.
+                        </p>
+                          <a href="https://github.com/paul-madut/Work-break-genrator"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
 
@@ -298,12 +301,14 @@
             setTimeout(function(){
                 msg.innerHTML=""
             }, 5000);
+            form.reset()
         })
         .catch(error => {
             msg.innerHTML = ("Message was not sent successfully!")
             setTimeout(function(){
                 msg.innerHTML=""
             }, 5000);
+            form.reset()
         })
     })
   </script>
